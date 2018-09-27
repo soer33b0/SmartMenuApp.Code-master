@@ -1,0 +1,6 @@
+SmartMenu
+Vælg 1-4, 0 lukker programmet
+1; Arealberegning (rektangel);DoThis
+2; Temperaturomregner (celsius-fahrenheit);DoThat
+3; ja;DoSomething
+4; nej;GetTheAnswerToLifeTheUniverseAndEverything
