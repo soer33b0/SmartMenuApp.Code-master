@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace SmartMenuLibrary
 {
@@ -15,7 +16,7 @@ namespace SmartMenuLibrary
 
             // Read the file and display it line by line.  
             System.IO.StreamReader file =
-                new System.IO.StreamReader(@"C:\Users\Søren\Desktop\SmartMenuApp.Code-master\menutxt.txt");
+                new System.IO.StreamReader(@"SmartMenuApp.Code-master/MenuSpec.txt");
             while ((line = file.ReadLine()) != null)
             {
                 System.Console.WriteLine(line);
