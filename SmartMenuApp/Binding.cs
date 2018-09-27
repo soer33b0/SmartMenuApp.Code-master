@@ -8,7 +8,7 @@ namespace SmartMenuApp
 {
     class Binding
     {
-        public static double DoThis()
+        /*public static string DoThis()
         {
             string heightString, widthString;
             double width, height, rectAngle;
@@ -22,10 +22,11 @@ namespace SmartMenuApp
             width = double.Parse(widthString);
 
             rectAngle = width * height;
-            Console.WriteLine("Rektangel er lig med" + rectAngle);
-
-            return width * height;
+            Console.WriteLine("Rektanglets areal er: " + rectAngle);
+            
+            return width * height; 
         }
+        */
         /*Koble menuvalg fra SmartMenu 
         til det udleverede softwarebibliotek 
         FunctionLibrary*/

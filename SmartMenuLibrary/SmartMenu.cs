@@ -22,16 +22,29 @@ namespace SmartMenuLibrary
             
             while ((line = file.ReadLine()) != null)
             {
-                System.Console.WriteLine(line);
+                //System.Console.WriteLine(line);
+                doesit.Add(line);
                 counter++;
             }
 
             file.Close();
             
         }
+        
+        //foreach loop, readline, 
+
+            List<string> doesit = new List<string>();
+            
+
+
         public void Activate()
         {
-           
+            
+            foreach (var item in doesit)
+            {
+                Console.WriteLine(item.Substring(0, item.IndexOf(';')));
+            }
+            string userinput = System.Console.ReadLine();
         }
     }
 }
