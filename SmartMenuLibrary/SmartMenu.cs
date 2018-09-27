@@ -17,9 +17,9 @@ namespace SmartMenuLibrary
 
             // Read the file and display it line by line.  
             System.IO.StreamReader file =
-                new System.IO.StreamReader(@"SmartMenuApp.Code-master/MenuSpec.txt");
+                new System.IO.StreamReader(@"..\..\MenuSpec.txt");
             //Loads MenuSpec.txt
-
+            
             while ((line = file.ReadLine()) != null)
             {
                 System.Console.WriteLine(line);
@@ -28,8 +28,6 @@ namespace SmartMenuLibrary
 
             file.Close();
             
-            // Suspend the screen.  
-            System.Console.ReadLine();
         }
         public void Activate()
         {
