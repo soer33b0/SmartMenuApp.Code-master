@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using SmartMenuLibrary;
 
 namespace SmartMenuLibrary
 {
@@ -26,13 +27,13 @@ namespace SmartMenuLibrary
             }
 
             file.Close();
-            System.Console.WriteLine("There were {0} lines.", counter);
+            
             // Suspend the screen.  
             System.Console.ReadLine();
         }
         public void Activate()
         {
-            // Implement ...
+           
         }
     }
 }

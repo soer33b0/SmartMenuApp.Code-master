@@ -1,7 +1,6 @@
 ﻿SmartMenu
-Vælg 1-5, 0 for at lukke programmet
-1: Arealberegning (RectangleArea)
-2: Temperaturomregner (Celsies - fahrenheit)
-3: Ja
-4: Nej
-5: Måske
+Vælg 1-4, 0 lukker programmet
+1: Arealberegning (rektangel);<DoThis>
+2: Temperaturomregner (celsius-fahrenheit);<DoThat>
+3: Ja;<DoSomething>
+4: Hvad er svaret på livet?;"4"
