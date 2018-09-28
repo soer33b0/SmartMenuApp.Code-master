@@ -67,31 +67,35 @@ namespace SmartMenuLibrary
 
                     break;
 
-                case 2:
+                case 2: //Omregner celsius til fahrenheit
+
                     Console.WriteLine("Temperaturomregning af celsius til fahrenheit");
                     string celsius = Console.ReadLine();
+
                     double værdi, resultat;
                     værdi = double.Parse(celsius);
                     resultat = (værdi * 9.0 / 5) + 32;
+
                     Console.WriteLine("Fahrenheit er: " + resultat);
                     Console.ReadKey();
+
                     break;
-                    // Celsius til fahrenheit
-                case 3:
+                    
+                case 3: //Omregner fahrenheit til celsius
 
                     Console.WriteLine("Temperaturomregning af fahrenheit til celsius");
                     string fahrenheit = Console.ReadLine();
+
                     double tal, resultatet;
                     tal = double.Parse(fahrenheit);
                     resultatet = (tal - 32) *(5.0 / 9.0);
+
                     Console.WriteLine("Fahrenheit er: " + resultatet);
                     Console.ReadKey();
 
-
-
                     break;
                 
-                case 4:
+                case 4: //Beregner sum, minimum og maximum
                     Console.WriteLine("== Indlæs talserie og beregn sum, min og max =====================");
                     Console.WriteLine("Indtast talserie (max 5 tal)");
 
@@ -114,9 +118,6 @@ namespace SmartMenuLibrary
 
                     break;
             }
-              
-
-
         }
     }
 }
