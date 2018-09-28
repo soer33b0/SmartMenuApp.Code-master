@@ -15,7 +15,7 @@ namespace SmartMenuLibrary
 
         public void LoadMenu(string path)
         {
-            danskArray = File.ReadLines(@"..\..\" + path + "").Take(10).ToArray();
+            danskArray = File.ReadLines(@"..\..\" + path + "").Take(7).ToArray();
             for (int i = 0; danskArray.Length > i; i++)
             {
                 Console.WriteLine(danskArray[i]);
@@ -92,7 +92,7 @@ namespace SmartMenuLibrary
 
                     double tal, resultatet;
                     tal = double.Parse(fahrenheit);
-                    resultatet = (tal - 32) *(5.0 / 9.0);
+                    resultatet = (tal - 32) * (5.0 / 9.0);
 
                     Console.WriteLine("Fahrenheit er: " + resultatet);
                     Console.ReadKey();
