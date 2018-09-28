@@ -1,6 +1,6 @@
 ﻿SmartMenu;
 Vælg 1-4, 0 lukker programmet;
 1: Arealberegning (rektangel);arealrekt
-2: Temperaturomregner (celsius-fahrenheit);2
-3: Sum Min og Max;3
-4: Hvad er svaret på livet?;4
+2: Temperaturomregner (celsius-fahrenheit);tempUtil
+3: Sum, Min og Max;sumMinMax
+4: Hvad er svaret på livet?;44

@@ -40,11 +40,48 @@ namespace SmartMenuLibrary
         public void Activate()
         {
             
-            foreach (var item in doesit)
+            foreach (var item in doesit) //sletter alt efter ";"
             {
                 Console.WriteLine(item.Substring(0, item.IndexOf(';')));
             }
-            string userinput = System.Console.ReadLine();
+            
+            int switchCase = Convert.ToInt32(Console.ReadLine());
+
+            switch(switchCase)
+
+            {
+                case 1: //beregner arealet af en rektangel
+                    string heightString, widthString;
+                    double width, height, rectAngle;
+
+                    Console.WriteLine("Indtast første variabel");
+                    heightString = Console.ReadLine();
+                    height = double.Parse(heightString);
+
+                    Console.WriteLine("Indtast anden variabel");
+                    widthString = Console.ReadLine();
+                    width = double.Parse(widthString);
+
+                    rectAngle = width * height;
+                    Console.WriteLine("Rektanglets areal er: " + rectAngle + "m2");
+
+                    break;
+
+                case 2:
+                    Console.WriteLine("nej");
+                    break;
+
+                case 3:
+
+                    break;
+                
+                case 4:
+
+                    break;
+            }
+              
+
+
         }
     }
 }
