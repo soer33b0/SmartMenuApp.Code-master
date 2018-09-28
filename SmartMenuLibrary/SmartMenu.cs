@@ -68,10 +68,24 @@ namespace SmartMenuLibrary
                     break;
 
                 case 2:
-                    Console.WriteLine("nej");
+                    Console.WriteLine("Temperaturomregning af celsius til fahrenheit");
+                    string celsius = Console.ReadLine();
+                    double værdi, resultat;
+                    værdi = double.Parse(celsius);
+                    resultat = (værdi * 9.0 / 5) + 32;
+                    Console.WriteLine("Fahrenheit er: " + resultat);
+                    Console.ReadKey();
                     break;
 
                 case 3:
+                    Console.WriteLine("Temperaturomregning af fahrenheit til celsius");
+                    string fahrenheit = Console.ReadLine();
+                    double tal, resultatet;
+                    tal = double.Parse(fahrenheit);
+                    resultatet = (tal - 32) *(5.0 / 9.0);
+                    Console.WriteLine("Fahrenheit er: " + resultatet);
+                    Console.ReadKey();
+
 
                     break;
                 
