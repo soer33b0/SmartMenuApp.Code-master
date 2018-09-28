@@ -1,9 +1,9 @@
-﻿Vælg sprog
-1. Dansk
-2. Engelsk
+﻿SmartMenu
 Vælg 1-4, 0 lukker programmet;
 1: Arealberegning (rektangel);arealrekt
 2: Temperaturomregner (celsius -> fahrenheit);celsiusFahrenheit
 3: Temperaturomregner (Fahrenheit -> celsius);fahrenheitCelsius
 4: Sum, Min og Max;sumMinMax
 0: Exit;exit
+
+

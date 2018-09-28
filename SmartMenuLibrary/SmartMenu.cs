@@ -22,8 +22,6 @@ namespace SmartMenuLibrary
             }
 
 
-
-
              /*int counter = 0;
             string line;
            
