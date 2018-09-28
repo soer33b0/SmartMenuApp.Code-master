@@ -76,8 +76,9 @@ namespace SmartMenuLibrary
                     Console.WriteLine("Fahrenheit er: " + resultat);
                     Console.ReadKey();
                     break;
-
+                    // Celsius til fahrenheit
                 case 3:
+
                     Console.WriteLine("Temperaturomregning af fahrenheit til celsius");
                     string fahrenheit = Console.ReadLine();
                     double tal, resultatet;
@@ -87,9 +88,29 @@ namespace SmartMenuLibrary
                     Console.ReadKey();
 
 
+
                     break;
                 
                 case 4:
+                    Console.WriteLine("== Indlæs talserie og beregn sum, min og max =====================");
+                    Console.WriteLine("Indtast talserie (max 5 tal)");
+
+                    int[] calcSumMinMax = new int[5];
+                    for (int i = 0; i < 5; i++)
+                    {
+                        string tallet = Console.ReadLine();
+                        calcSumMinMax[i] = int.Parse(tallet);
+                    }
+
+                    int sum = 0;
+                    for (int i = 0; i < calcSumMinMax.Length; ++i)
+                    {
+                        sum = calcSumMinMax[i] + sum;
+                    }
+
+                    Console.WriteLine("Sum af talserie: " + sum);
+                    Console.WriteLine("Minimum af talserie: " + calcSumMinMax.Min());
+                    Console.WriteLine("Maximum af talserie: " + calcSumMinMax.Max());
 
                     break;
             }
