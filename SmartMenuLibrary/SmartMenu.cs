@@ -15,7 +15,7 @@ namespace SmartMenuLibrary
 
         public void LoadMenu(string path)
         {
-            danskArray = File.ReadLines(@"..\..\" + path + "").Take(3).ToArray();
+            danskArray = File.ReadLines(@"..\..\" + path + "").Take(10).ToArray();
             for (int i = 0; danskArray.Length > i; i++)
             {
                 Console.WriteLine(danskArray[i]);
@@ -55,7 +55,7 @@ namespace SmartMenuLibrary
             switch(switchCase)
 
             {
-                case 1: //beregner arealet af en rektangel
+                case 1: //Beregner arealet af en rektangel
                     string heightString, widthString;
                     double width, height, rectAngle;
 
