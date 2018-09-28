@@ -6,18 +6,26 @@ using System.Threading.Tasks;
 using System.IO;
 using SmartMenuLibrary;
 
+
 namespace SmartMenuLibrary
 {
     public class SmartMenu
     {
+        String[] englishArray, danskArray;
+
         public void LoadMenu(string path)
         {
+            danskArray = File.ReadLines(@"..\..\" + path + "").Take(10).Skip(1).ToArray();
+            for (int i = 0; danskArray.Length > i; i++)
+            {
+                Console.WriteLine(danskArray[i]);
+            }
             int counter = 0;
             string line;
 
             // Read the file and display it line by line.  
             System.IO.StreamReader file =
-                new System.IO.StreamReader(@"..\..\MenuSpec.txt");
+                new System.IO.StreamReader(@"..\..\"+path+"");
             //Loads MenuSpec.txt
             
             while ((line = file.ReadLine()) != null)
@@ -116,6 +124,10 @@ namespace SmartMenuLibrary
                     Console.WriteLine("Maximum af talserie: " + calcSumMinMax.Max());
 
                     break;
+                case 0:
+                    
+                    break;
+                    
             }
         }
     }
