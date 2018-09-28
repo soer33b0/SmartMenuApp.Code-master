@@ -54,16 +54,15 @@ namespace SmartMenuLibrary
                     string heightString, widthString;
                     double width, height, rectAngle;
 
-                    Console.WriteLine("Indtast første variabel");
+                    Console.Write("Indtast rektanglets længde: ");
                     heightString = Console.ReadLine();
                     height = double.Parse(heightString);
-
-                    Console.WriteLine("Indtast anden variabel");
+                    Console.Write("Indtast rektanglets højde: ");
                     widthString = Console.ReadLine();
                     width = double.Parse(widthString);
 
                     rectAngle = width * height;
-                    Console.WriteLine("Rektanglets areal er: " + rectAngle + "m2");
+                    Console.WriteLine("Rektanglets areal er: " + rectAngle + " m2");
 
                     break;
 
