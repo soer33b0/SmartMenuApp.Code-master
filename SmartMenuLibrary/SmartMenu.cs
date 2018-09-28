@@ -15,17 +15,21 @@ namespace SmartMenuLibrary
 
         public void LoadMenu(string path)
         {
-            danskArray = File.ReadLines(@"..\..\" + path + "").Take(10).Skip(1).ToArray();
+            danskArray = File.ReadLines(@"..\..\" + path + "").Take(3).ToArray();
             for (int i = 0; danskArray.Length > i; i++)
             {
                 Console.WriteLine(danskArray[i]);
             }
-            int counter = 0;
-            string line;
 
+
+
+
+             /*int counter = 0;
+            string line;
+           
             // Read the file and display it line by line.  
             System.IO.StreamReader file =
-                new System.IO.StreamReader(@"..\..\"+path+"");
+                new System.IO.StreamReader(@"..\..\MenuSpec.txt");
             //Loads MenuSpec.txt
             
             while ((line = file.ReadLine()) != null)
@@ -36,7 +40,7 @@ namespace SmartMenuLibrary
             }
 
             file.Close();
-            
+            */
         }
         List<string> doesit = new List<string>();
 
@@ -98,7 +102,7 @@ namespace SmartMenuLibrary
                     break;
                 
                 case 4: //Beregner sum, minimum og maximum
-                    Console.WriteLine("== Indlæs talserie og beregn sum, min og max =====================");
+                    Console.WriteLine("Indlæs talserie og beregn sum, min og max");
                     Console.WriteLine("Indtast talserie (max 5 tal)");
 
                     int[] calcSumMinMax = new int[5];
@@ -126,6 +130,7 @@ namespace SmartMenuLibrary
                     break;
                     
             }
+
         }
     }
 }
