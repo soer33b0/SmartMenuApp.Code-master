@@ -30,16 +30,19 @@ namespace SmartMenuLibrary
                     {
                         Console.WriteLine(danskArray[i]);
                     }
+                    
                     break;
                     
                 case 2:
 
-                    englishArray = File.ReadLines(@"..\..\" + path + "").Take(5).Skip(10).ToArray();
+                    englishArray = File.ReadLines(@"..\..\" + path + "").Skip(9).Take(5).ToArray();
                     for (int i = 0; englishArray.Length > i; i++)
                     {
                         Console.WriteLine(englishArray[i]);
                     }
                     break;
+                    
+
             }
             /*int counter = 0;
             string line;
@@ -63,14 +66,14 @@ namespace SmartMenuLibrary
 
         public void Activate()
         {
-            
-            foreach (var item in doesit) //sletter alt efter ";"
+
+            /*foreach (var item in danskArray) //sletter alt efter ";"
             {
                 Console.WriteLine(item.Substring(0, item.IndexOf(';')));
-            }
+            }*/
 
             int switchCase = Convert.ToInt32(Console.ReadLine());
-
+            
             switch (switchCase)
 
             {
@@ -92,28 +95,28 @@ namespace SmartMenuLibrary
 
                 case 2: //Omregner celsius til fahrenheit
 
-                    Console.WriteLine("Temperaturomregning af celsius til fahrenheit");
+                    Console.WriteLine("Celsius -> fahrenheit");
                     string celsius = Console.ReadLine();
 
                     double værdi, resultat;
                     værdi = double.Parse(celsius);
                     resultat = (værdi * 9.0 / 5) + 32;
 
-                    Console.WriteLine("Fahrenheit er: " + resultat);
+                    Console.WriteLine("Fahrenheit: " + resultat);
                     Console.ReadKey();
 
                     break;// stopper casen 
                     
                 case 3: //Omregner fahrenheit til celsius
 
-                    Console.WriteLine("Temperaturomregning af fahrenheit til celsius");
+                    Console.WriteLine("Fahrenheit -> celsius");
                     string fahrenheit = Console.ReadLine();
 
                     double tal, resultatet;
                     tal = double.Parse(fahrenheit);
                     resultatet = (tal - 32) * (5.0 / 9.0);
 
-                    Console.WriteLine("Celsius er: " + resultatet);
+                    Console.WriteLine("Celsius: " + resultatet);
                     Console.ReadKey();
 
                     break;

@@ -1,14 +1,14 @@
 ﻿SmartMenu
 Vælg 1-4, 0 lukker programmet
-1: Arealberegning (rektangel);arealrekt
-2: Temperaturomregner (celsius -> fahrenheit);celsiusFahrenheit
-3: Temperaturomregner (Fahrenheit -> celsius);fahrenheitCelsius
-4: Sum, Min og Max;sumMinMax
-0: Forlad menu;exit
+1: Arealberegning (rektangel)
+2: Temperaturomregner (celsius -> fahrenheit)
+3: Temperaturomregner (Fahrenheit -> celsius)
+4: Sum, Min og Max
+0: Forlad menu
 
 
-1: Area;arealrekt
-2: Temperature (celsius to fahrenheit);celsiusFahrenheit
-3: Temperature (fahrenheit to celsius);fahrenheitCelsius
-4: Sum, Min og Max;SumMinMax
-0: Exit;exit
+1: Area
+2: Temperature (celsius to fahrenheit)
+3: Temperature (fahrenheit to celsius)
+4: Sum, Min og Max
+0: Exit
