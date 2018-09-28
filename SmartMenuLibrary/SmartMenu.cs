@@ -15,19 +15,38 @@ namespace SmartMenuLibrary
 
         public void LoadMenu(string path)
         {
-            danskArray = File.ReadLines(@"..\..\" + path + "").Take(7).ToArray();
-            for (int i = 0; danskArray.Length > i; i++)
+            Console.WriteLine("Tast 1 for dansk");
+            Console.WriteLine("Press 2 for english");
+            
+            
+            int switchCase = Convert.ToInt32(Console.ReadLine());
+
+            switch (switchCase)
             {
-                Console.WriteLine(danskArray[i]);
+                case 1:
+
+                    danskArray = File.ReadLines(@"..\..\" + path + "").Take(7).ToArray();
+                    for (int i = 0; danskArray.Length > i; i++)
+                    {
+                        Console.WriteLine(danskArray[i]);
+                    }
+                    break;
+                    
+                case 2:
+
+                    englishArray = File.ReadLines(@"..\..\" + path + "").Take(5).Skip(10).ToArray();
+                    for (int i = 0; englishArray.Length > i; i++)
+                    {
+                        Console.WriteLine(englishArray[i]);
+                    }
+                    break;
             }
-
-
-             /*int counter = 0;
+            /*int counter = 0;
             string line;
            
             // Read the file and display it line by line.  
             System.IO.StreamReader file =
-                new System.IO.StreamReader(@"..\..\MenuSpec.txt");
+                new System.IO.StreamReader(@"..\..\"+path+"");
             //Loads MenuSpec.txt
             
             while ((line = file.ReadLine()) != null)
@@ -36,7 +55,7 @@ namespace SmartMenuLibrary
                 doesit.Add(line);
                 counter++;
             }
-
+            
             file.Close();
             */
         }
@@ -49,10 +68,10 @@ namespace SmartMenuLibrary
             {
                 Console.WriteLine(item.Substring(0, item.IndexOf(';')));
             }
-            
+
             int switchCase = Convert.ToInt32(Console.ReadLine());
 
-            switch(switchCase)
+            switch (switchCase)
 
             {
                 case 1: //Beregner arealet af en rektangel
@@ -94,7 +113,7 @@ namespace SmartMenuLibrary
                     tal = double.Parse(fahrenheit);
                     resultatet = (tal - 32) * (5.0 / 9.0);
 
-                    Console.WriteLine("Fahrenheit er: " + resultatet);
+                    Console.WriteLine("Celsius er: " + resultatet);
                     Console.ReadKey();
 
                     break;
