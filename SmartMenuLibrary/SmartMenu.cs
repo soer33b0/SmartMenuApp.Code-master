@@ -38,12 +38,7 @@ namespace SmartMenuLibrary
             file.Close();
             
         }
-        
-        //foreach loop, readline, 
-
-            List<string> doesit = new List<string>();
-            
-
+        List<string> doesit = new List<string>();
 
         public void Activate()
         {
@@ -86,7 +81,7 @@ namespace SmartMenuLibrary
                     Console.WriteLine("Fahrenheit er: " + resultat);
                     Console.ReadKey();
 
-                    break;
+                    break;// stopper casen 
                     
                 case 3: //Omregner fahrenheit til celsius
 
@@ -124,8 +119,10 @@ namespace SmartMenuLibrary
                     Console.WriteLine("Maximum af talserie: " + calcSumMinMax.Max());
 
                     break;
+
                 case 0:
-                    
+                    Environment.Exit(0);
+
                     break;
                     
             }
