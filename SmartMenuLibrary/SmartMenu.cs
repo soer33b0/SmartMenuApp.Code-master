@@ -72,10 +72,30 @@ namespace SmartMenuLibrary
                     break;
 
                 case 3:
+                    
 
                     break;
                 
                 case 4:
+                    Console.WriteLine("== Indlæs talserie og beregn sum, min og max =====================");
+                    Console.WriteLine("Indtast talserie (max 5 tal)");
+
+                    int[] calcSumMinMax = new int[5];
+                    for (int i = 0; i < 5; i++)
+                    {
+                        string tal = Console.ReadLine();
+                        calcSumMinMax[i] = int.Parse(tal);
+                    }
+
+                    int sum = 0;
+                    for (int i = 0; i < calcSumMinMax.Length; ++i)
+                    {
+                        sum = calcSumMinMax[i] + sum;
+                    }
+
+                    Console.WriteLine("Sum af talserie: " + sum);
+                    Console.WriteLine("Minimum af talserie: " + calcSumMinMax.Min());
+                    Console.WriteLine("Maximum af talserie: " + calcSumMinMax.Max());
 
                     break;
             }
