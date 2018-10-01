@@ -6,7 +6,8 @@ Vælg 1-4, 0 lukker programmet
 4: Sum, Min og Max
 0: Forlad menu
 
-
+SmartMenu
+Choose 1-4, 0 closes program
 1: Area
 2: Temperature (celsius to fahrenheit)
 3: Temperature (fahrenheit to celsius)
